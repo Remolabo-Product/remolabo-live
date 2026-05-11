@@ -1,0 +1,269 @@
+/* リセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 基本スタイル */
+body {
+    font-family: 'M PLUS Rounded 1c', 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    background: linear-gradient(135deg, #fff8e1 0%, #ffe082 100%);
+    color: #3e2723;
+    min-height: 100vh;
+    padding: 20px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fffef7;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* ヘッダー */
+header {
+    background: linear-gradient(135deg, #fff9c4 0%, #ffd54f 100%);
+    padding: 30px 20px;
+    border-bottom: 3px solid #ff6f00;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+header h1 {
+    color: #3e2723;
+    font-size: 2em;
+    font-weight: 800;
+    margin: 0;
+}
+
+/* 説明セクション */
+.info-section {
+    padding: 30px 20px;
+}
+
+.info-box {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.info-box h2 {
+    color: #3e2723;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.info-box p {
+    color: #5d4037;
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.tips {
+    margin-top: 20px;
+    padding: 20px;
+    background: linear-gradient(135deg, #fff9c4 0%, #ffe082 100%);
+    border-radius: 10px;
+    border-left: 4px solid #ff6f00;
+}
+
+.tips h3 {
+    color: #3e2723;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.tips ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.tips li {
+    color: #5d4037;
+    font-size: 1em;
+    line-height: 1.8;
+    padding-left: 1.5em;
+    position: relative;
+}
+
+.tips li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #ff6f00;
+    font-weight: bold;
+}
+
+/* 動画セクション */
+.video-section {
+    padding: 0 20px 30px;
+}
+
+.video-container {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    min-height: 400px;
+}
+
+/* Firework埋め込み要素のスタイル調整 */
+fw-storyblock {
+    display: block;
+    width: 100%;
+    min-height: 400px;
+}
+
+/* フッター */
+footer {
+    background: linear-gradient(135deg, #fff9c4 0%, #ffd54f 100%);
+    padding: 30px 20px;
+    text-align: center;
+    border-top: 3px solid #ff6f00;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-remonyan {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+}
+
+.footer-text {
+    color: #3e2723;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.copyright {
+    color: #5d4037;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        border-radius: 15px;
+    }
+
+    header {
+        padding: 20px 15px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .header-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .info-section {
+        padding: 20px 15px;
+    }
+
+    .info-box {
+        padding: 20px;
+    }
+
+    .info-box h2 {
+        font-size: 1.3em;
+    }
+
+    .info-box p {
+        font-size: 1em;
+    }
+
+    .video-section {
+        padding: 0 15px 20px;
+    }
+
+    .video-container {
+        padding: 15px;
+        min-height: 300px;
+    }
+
+    fw-storyblock {
+        min-height: 300px;
+    }
+
+    footer {
+        padding: 20px 15px;
+    }
+
+    .footer-remonyan {
+        width: 100px;
+    }
+
+    .footer-text {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.3em;
+    }
+
+    .header-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .info-box h2 {
+        font-size: 1.2em;
+    }
+
+    .info-box p,
+    .tips li {
+        font-size: 0.95em;
+    }
+
+    .video-container {
+        min-height: 250px;
+    }
+
+    fw-storyblock {
+        min-height: 250px;
+    }
+
+    .footer-remonyan {
+        width: 80px;
+    }
+
+    .footer-text {
+        font-size: 0.95em;
+    }
+}
