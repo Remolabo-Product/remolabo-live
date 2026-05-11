@@ -145,8 +145,16 @@ header h1 {
     font-size: 1.8em;
     font-weight: 800;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.video-instruction {
+    color: #5d4037;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 .video-container {
@@ -245,6 +253,10 @@ footer {
         font-size: 1.5em;
     }
 
+    .video-instruction {
+        font-size: 1em;
+    }
+
     .video-section {
         padding: 0 15px 20px;
     }
@@ -292,6 +304,10 @@ footer {
 
     .video-title {
         font-size: 1.3em;
+    }
+
+    .video-instruction {
+        font-size: 0.95em;
     }
 
     .video-container {
