@@ -140,11 +140,21 @@ header h1 {
     padding: 0 20px 30px;
 }
 
+.video-title {
+    color: #ff6f00;
+    font-size: 1.8em;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .video-container {
-    background: white;
+    background: linear-gradient(135deg, #fffef7 0%, #fff9c4 100%);
     border-radius: 15px;
     padding: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 4px solid #ff6f00;
+    box-shadow: 0 8px 25px rgba(255, 111, 0, 0.3);
     min-height: 400px;
 }
 
@@ -231,6 +241,10 @@ footer {
         width: 100%;
     }
 
+    .video-title {
+        font-size: 1.5em;
+    }
+
     .video-section {
         padding: 0 15px 20px;
     }
@@ -274,6 +288,10 @@ footer {
     .info-box p,
     .tips li {
         font-size: 0.95em;
+    }
+
+    .video-title {
+        font-size: 1.3em;
     }
 
     .video-container {
