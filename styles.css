@@ -85,6 +85,20 @@ header h1 {
     margin-top: 15px;
 }
 
+/* スケジュール画像 */
+.schedule-banner {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.schedule-image {
+    max-width: 100%;
+    width: 700px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
 .tips {
     margin-top: 20px;
     padding: 20px;
@@ -211,6 +225,10 @@ footer {
 
     .info-box p {
         font-size: 1em;
+    }
+
+    .schedule-image {
+        width: 100%;
     }
 
     .video-section {
